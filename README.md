@@ -36,4 +36,26 @@ exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE }, {
 });
 ```
 
-Refer to Backbone's [save method](http://backbonejs.org/#Model-save) documentation for more information.
+Here we are setting the attribute `ATTRIBUTENAME` in the Model to `TYPEVALUE` and then saving it. A complete representation of the Model is always sent to the server, regardless of which attributes you set in the save call.
+
+Refer to [Backbone's save method](http://backbonejs.org/#Model-save) documentation for more information.
+
+####Update
+
+Updating a MODELNAME Model is very similar to creating one. Updating is done by calling the save method on an already persisted object. 
+
+```javascript
+exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE2 });
+```
+
+Updating the Model this way will cause a `PUT` request to be triggered, if you would like to send a `PATCH` request instead, then you should call like so:
+
+```javascript
+exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE2 }, {patch: true});
+```
+
+Just like in Model creation, even if you are not updating all Model attributes, a complete representation is sent to the server.
+
+Refer to [Backbone's save method](http://backbonejs.org/#Model-save) documentation for more information.
+
+####Read
