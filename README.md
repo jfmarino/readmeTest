@@ -161,7 +161,7 @@ MODELNAMEExactMatch.query({
 });
 
 // using the fetch method
-MODELNAMEAll.fetch({
+MODELNAMEExactMatch.fetch({
   query: {
     FIELDNAME: FIELDVALUE // here the query is passed as an attribute on the single options hash
   },
@@ -170,6 +170,66 @@ MODELNAMEAll.fetch({
   success: function(collection, response, options) {...},
   error: function(collection, response, options) {...}
 });
+```
+
+Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
+
+#####MODELNAMECount
+
+Get the amount of instances that satisfy the given query. You may execute this query scope by calling the `query` method or the `fetch` method.
+
+```javascript
+var MODELNAMECount = new SDKNAMESdk.collections.MODELNAMECount();
+
+// using the query method
+MODELNAMECount.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
+// using the fetch method
+MODELNAMECount.fetch({
+  query: {
+    FIELDNAME: FIELDVALUE // here the query is passed as an attribute on the single options hash
+  },
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
+// to access the amount
+var amount = MODELNAMECount.valueOf();
+```
+
+Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
+
+#####MODELNAMECountExactMatch
+
+Get the amount of instances that match the given query exactly. You may execute this query scope by calling the `query` method or the `fetch` method.
+
+```javascript
+var MODELNAMECountExactMatch = new SDKNAMESdk.collections.MODELNAMECountExactMatch();
+
+// using the query method
+MODELNAMECountExactMatch.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
+// using the fetch method
+MODELNAMECountExactMatch.fetch({
+  query: {
+    FIELDNAME: FIELDVALUE // here the query is passed as an attribute on the single options hash
+  },
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
+// to access the amount
+var amount = MODELNAMECountExactMatch.valueOf();
 ```
 
 Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
