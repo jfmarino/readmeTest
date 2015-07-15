@@ -100,3 +100,76 @@ exampleModel.destroy({
 The `success` and `error` callback are optional as with other Backbone CRUD method calls.
 
 Refer to [Backbone's Model destroy method](http://backbonejs.org/#Model-destroy) documentation for more information.
+
+####Query Scopes
+
+The available query scopes for MODELNAME objects are:
+
+* MODELNAMEAll
+* MODELNAMEExactMatch
+* MODELNAMECount
+* MODELNAMECountExactMatch
+
+#####MODELNAMEAll
+
+Get all results that match the given query. You may execute this query scope by calling the `query` method or the `fetch` method.
+
+```javascript
+var MODELNAMEAll = new SDKNAMESdk.collections.MODELNAMEAll();
+
+// using the query method
+MODELNAMEAll.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  limit: 10,
+  offset: 0,
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
+// using the fetch method
+MODELNAMEAll.fetch({
+  query: {
+    FIELDNAME: FIELDVALUE // here the query is passed as an attribute on the single options hash
+  },
+  limit: 10,
+  offset: 0,
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+```
+
+The first object passed represents the field values to match when executing the query. The second object is an options hash, where you can define `success` and `error` callbacks but also a `limit` and `offset` value if you want the query results to be paginated.
+
+Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
+
+#####MODELNAMEExactMatch
+
+Get a Collection with instances that match the query exactly. The difference with the Read action is that it returns a Colleciton, not just a single Model. You may execute this query scope by calling the `query` method or the `fetch` method.
+
+```javascript
+var MODELNAMEExactMatch = new SDKNAMESdk.collections.MODELNAMEExactMatch();
+
+// using the query method
+MODELNAMEExactMatch.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  limit: 10,
+  offset: 0,
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
+// using the fetch method
+MODELNAMEAll.fetch({
+  query: {
+    FIELDNAME: FIELDVALUE // here the query is passed as an attribute on the single options hash
+  },
+  limit: 10,
+  offset: 0,
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+```
+
+Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
