@@ -17,12 +17,12 @@
 	- [Authentication:  Login & Logout](#authentication-login-logout)
 	- [Using local caching](#using-local-caching)
 	- [Models](#models)
-			- [Account](#account)
-				- [Create](#create)
-				- [Update](#update)
-				- [Read](#read)
-				- [Delete](#delete)
-				- [Query Scopes](#query-scopes)
+		- [Account](#account)
+			- [Create](#create)
+			- [Update](#update)
+			- [Read](#read)
+			- [Delete](#delete)
+			- [Query Scopes](#query-scopes)
 	      
 	        
 					- [AccountAll](#account-all)
