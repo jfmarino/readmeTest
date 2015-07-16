@@ -759,7 +759,7 @@ AnimeDetailInstance.save(
 );
 ```
 
-**Note:** the interpolation context is always an *Array* of *Objects*. Those objects will be collapsed into a single Object which will then act as the context, so `[{a: "a", b: "b", c: "c"}, {b: "B", d: "D"}]` will end up as `{a: "a", b: "B", c: "c", d: "D"}`. Note that the Object with the highest index in the Array will overwrite previous ones.
+**Note:** the interpolation context is always an *Array* of *Objects*. Those objects will be collapsed into a single Object which will then act as the context so `[{a: "a", b: "b", c: "c"}, {b: "B", d: "D"}]` will end up as `{a: "a", b: "B", c: "c", d: "D"}`. Note that the Object with the highest index in the Array will overwrite previous ones.
 
 Another way to set the interpolation context is to set it on a AnimeDetail instance, if you would like that instance to always use the same context you can just set it like this:
 
