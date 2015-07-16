@@ -1,4 +1,4 @@
-<!-- TOC depth:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC -->
 
 - [Developing with Grunt](#developing-with-grunt)
 	- [Prerequisites](#prerequisites)
