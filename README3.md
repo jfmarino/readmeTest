@@ -19,7 +19,6 @@
 	- [Models](#models)
   
     
-    
 		- [Account](#account)
 			- [Create](#create)
 			- [Update](#update)
@@ -44,15 +43,12 @@
 	    
     
     
-    
-      
-    
 		- [Bird](#bird)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [BirdAll](#bird-all)
@@ -71,15 +67,12 @@
 	    
     
     
-    
-      
-    
 		- [Boat](#boat)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [BoatAll](#boat-all)
@@ -98,15 +91,12 @@
 	    
     
     
-    
-      
-    
 		- [Car](#car)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [CarAll](#car-all)
@@ -125,15 +115,12 @@
 	    
     
     
-    
-      
-    
 		- [Category](#category)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [CategoryAll](#category-all)
@@ -152,15 +139,12 @@
 	    
     
     
-    
-      
-    
 		- [Child](#child)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [ChildAll](#child-all)
@@ -179,15 +163,12 @@
 	    
     
     
-    
-      
-    
 		- [City](#city)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [CityAll](#city-all)
@@ -206,15 +187,12 @@
 	    
     
     
-    
-      
-    
 		- [Department](#department)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [DepartmentAll](#department-all)
@@ -233,15 +211,12 @@
 	    
     
     
-    
-      
-    
 		- [Dog](#dog)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [DogAll](#dog-all)
@@ -260,15 +235,12 @@
 	    
     
     
-    
-      
-    
 		- [Dude](#dude)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [DudeAll](#dude-all)
@@ -539,15 +511,12 @@
 	    
     
     
-    
-      
-    
 		- [Friend](#friend)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [FriendAll](#friend-all)
@@ -569,15 +538,12 @@
 	    
     
     
-    
-      
-    
 		- [Goat](#goat)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [GoatAll](#goat-all)
@@ -596,15 +562,12 @@
 	    
     
     
-    
-      
-    
 		- [House](#house)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [HouseAll](#house-all)
@@ -623,15 +586,12 @@
 	    
     
     
-    
-      
-    
 		- [IncomingContact](#incoming-contact)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [IncomingContactAll](#incoming-contact-all)
@@ -650,15 +610,12 @@
 	    
     
     
-    
-      
-    
 		- [Man](#man)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [ManAll](#man-all)
@@ -677,15 +634,12 @@
 	    
     
     
-    
-      
-    
 		- [Monkey](#monkey)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [MonkeyAll](#monkey-all)
@@ -704,15 +658,12 @@
 	    
     
     
-    
-      
-    
 		- [Order](#order)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [OrderAll](#order-all)
@@ -743,15 +694,12 @@
 	    
     
     
-    
-      
-    
 		- [Outage](#outage)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [OutageAll](#outage-all)
@@ -770,15 +718,12 @@
 	    
     
     
-    
-      
-    
 		- [Pal](#pal)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [PalAll](#pal-all)
@@ -797,15 +742,12 @@
 	    
     
     
-    
-      
-    
 		- [Patient](#patient)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [PatientAll](#patient-all)
@@ -824,15 +766,12 @@
 	    
     
     
-    
-      
-    
 		- [Product](#product)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [ProductAll](#product-all)
@@ -857,15 +796,12 @@
 	    
     
     
-    
-      
-    
 		- [RelationalDude](#relational-dude)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [RelationalDudeAll](#relational-dude-all)
@@ -1136,15 +1072,12 @@
 	    
     
     
-    
-      
-    
 		- [Restaurant](#restaurant)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [RestaurantAll](#restaurant-all)
@@ -1163,15 +1096,12 @@
 	    
     
     
-    
-      
-    
 		- [Robot](#robot)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [RobotAll](#robot-all)
@@ -1190,15 +1120,12 @@
 	    
     
     
-    
-      
-    
 		- [SalesReport](#sales-report)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [SalesReportAll](#sales-report-all)
@@ -1217,15 +1144,12 @@
 	    
     
     
-    
-      
-    
 		- [SalesforceAccount](#salesforce-account)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [SalesforceAccountAll](#salesforce-account-all)
@@ -1244,15 +1168,12 @@
 	    
     
     
-    
-      
-    
 		- [SalesforceContact](#salesforce-contact)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [SalesforceContactAll](#salesforce-contact-all)
@@ -1271,15 +1192,12 @@
 	    
     
     
-    
-      
-    
 		- [Store](#store)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [StoreAll](#store-all)
@@ -1298,15 +1216,12 @@
 	    
     
     
-    
-      
-    
 		- [Subscriber](#subscriber)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [SubscriberAll](#subscriber-all)
@@ -1325,15 +1240,12 @@
 	    
     
     
-    
-      
-    
 		- [User](#user)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [UserAll](#user-all)
@@ -1352,15 +1264,12 @@
 	    
     
     
-    
-      
-    
 		- [Wizard](#wizard)
-			- [Create](#create-#{index-1})
-			- [Update](#update-#{index-1})
-			- [Read](#read-#{index-1})
-			- [Delete](#delete-#{index-1})
-			- [Query Scopes](#query-scopes-#{index-1})
+			- [Create](#create-#{suffix_num})
+			- [Update](#update-#{suffix_num})
+			- [Read](#read-#{suffix_num})
+			- [Delete](#delete-#{suffix_num})
+			- [Query Scopes](#query-scopes-#{suffix_num})
 	    
 	      
 				- [WizardAll](#wizard-all)
