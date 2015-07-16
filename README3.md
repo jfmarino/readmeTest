@@ -17,1366 +17,1366 @@
 	- [Authentication:  Login & Logout](#authentication-login-logout)
 	- [Using local caching](#using-local-caching)
 	- [Models](#models)
+  
+    
+    
+		- [Account](#account)
+			- [Create](#create)
+			- [Update](#update)
+			- [Read](#read)
+			- [Delete](#delete)
+			- [Query Scopes](#query-scopes)
+	    
+	      
+				- [AccountAll](#account-all)
+	    
+	      
+				- [AccountExactMatch](#account-exact-match)
+	    
+	      
+				- [AccountCount](#account-count)
+	    
+	      
+				- [AccountCountExactMatch](#account-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-			- [Account](#account)
-				- [Create](#create)
-				- [Update](#update)
-				- [Read](#read)
-				- [Delete](#delete)
-				- [Query Scopes](#query-scopes)
+    
+		- [Bird](#bird)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [AccountAll](#account-all)
+				- [BirdAll](#bird-all)
+	    
 	      
-	        
-					- [AccountExactMatch](#account-exact-match)
+				- [BirdExactMatch](#bird-exact-match)
+	    
 	      
-	        
-					- [AccountCount](#account-count)
+				- [BirdCount](#bird-count)
+	    
 	      
-	        
-					- [AccountCountExactMatch](#account-count-exact-match)
-	      
-	      
-	      
-	      
+				- [BirdCountExactMatch](#bird-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Bird](#bird)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Boat](#boat)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [BirdAll](#bird-all)
+				- [BoatAll](#boat-all)
+	    
 	      
-	        
-					- [BirdExactMatch](#bird-exact-match)
+				- [BoatExactMatch](#boat-exact-match)
+	    
 	      
-	        
-					- [BirdCount](#bird-count)
+				- [BoatCount](#boat-count)
+	    
 	      
-	        
-					- [BirdCountExactMatch](#bird-count-exact-match)
-	      
-	      
-	      
-	      
+				- [BoatCountExactMatch](#boat-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Boat](#boat)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Car](#car)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [BoatAll](#boat-all)
+				- [CarAll](#car-all)
+	    
 	      
-	        
-					- [BoatExactMatch](#boat-exact-match)
+				- [CarExactMatch](#car-exact-match)
+	    
 	      
-	        
-					- [BoatCount](#boat-count)
+				- [CarCount](#car-count)
+	    
 	      
-	        
-					- [BoatCountExactMatch](#boat-count-exact-match)
-	      
-	      
-	      
-	      
+				- [CarCountExactMatch](#car-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Car](#car)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Category](#category)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [CarAll](#car-all)
+				- [CategoryAll](#category-all)
+	    
 	      
-	        
-					- [CarExactMatch](#car-exact-match)
+				- [CategoryExactMatch](#category-exact-match)
+	    
 	      
-	        
-					- [CarCount](#car-count)
+				- [CategoryCount](#category-count)
+	    
 	      
-	        
-					- [CarCountExactMatch](#car-count-exact-match)
-	      
-	      
-	      
-	      
+				- [CategoryCountExactMatch](#category-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Category](#category)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Child](#child)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [CategoryAll](#category-all)
+				- [ChildAll](#child-all)
+	    
 	      
-	        
-					- [CategoryExactMatch](#category-exact-match)
+				- [ChildExactMatch](#child-exact-match)
+	    
 	      
-	        
-					- [CategoryCount](#category-count)
+				- [ChildCount](#child-count)
+	    
 	      
-	        
-					- [CategoryCountExactMatch](#category-count-exact-match)
-	      
-	      
-	      
-	      
+				- [ChildCountExactMatch](#child-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Child](#child)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [City](#city)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [ChildAll](#child-all)
+				- [CityAll](#city-all)
+	    
 	      
-	        
-					- [ChildExactMatch](#child-exact-match)
+				- [CityExactMatch](#city-exact-match)
+	    
 	      
-	        
-					- [ChildCount](#child-count)
+				- [CityCount](#city-count)
+	    
 	      
-	        
-					- [ChildCountExactMatch](#child-count-exact-match)
-	      
-	      
-	      
-	      
+				- [CityCountExactMatch](#city-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [City](#city)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Department](#department)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [CityAll](#city-all)
+				- [DepartmentAll](#department-all)
+	    
 	      
-	        
-					- [CityExactMatch](#city-exact-match)
+				- [DepartmentExactMatch](#department-exact-match)
+	    
 	      
-	        
-					- [CityCount](#city-count)
+				- [DepartmentCount](#department-count)
+	    
 	      
-	        
-					- [CityCountExactMatch](#city-count-exact-match)
-	      
-	      
-	      
-	      
+				- [DepartmentCountExactMatch](#department-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Department](#department)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Dog](#dog)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [DepartmentAll](#department-all)
+				- [DogAll](#dog-all)
+	    
 	      
-	        
-					- [DepartmentExactMatch](#department-exact-match)
+				- [DogExactMatch](#dog-exact-match)
+	    
 	      
-	        
-					- [DepartmentCount](#department-count)
+				- [DogCount](#dog-count)
+	    
 	      
-	        
-					- [DepartmentCountExactMatch](#department-count-exact-match)
-	      
-	      
-	      
-	      
+				- [DogCountExactMatch](#dog-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Dog](#dog)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Dude](#dude)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [DogAll](#dog-all)
+				- [DudeAll](#dude-all)
+	    
 	      
-	        
-					- [DogExactMatch](#dog-exact-match)
+				- [DudeExactMatch](#dude-exact-match)
+	    
 	      
-	        
-					- [DogCount](#dog-count)
+				- [DudeCount](#dude-count)
+	    
 	      
-	        
-					- [DogCountExactMatch](#dog-count-exact-match)
+				- [DudeCountExactMatch](#dude-count-exact-match)
+	    
 	      
+				- [DudeBooleanAssignableQs](#dude-boolean-assignable-qs)
+	    
 	      
+				- [DudeDateAssignableQs](#dude-date-assignable-qs)
+	    
 	      
+				- [DudeTimeAssignableQs](#dude-time-assignable-qs)
+	    
 	      
+				- [DudeFloatAssignableQs](#dude-float-assignable-qs)
+	    
+	      
+				- [DudeIntegerAssignableQs](#dude-integer-assignable-qs)
+	    
+	      
+				- [DudeStringAssignableQs](#dude-string-assignable-qs)
+	    
+	      
+				- [DudeBooleanDefaultValueQs](#dude-boolean-default-value-qs)
+	    
+	      
+				- [DudeBooleanCountQs](#dude-boolean-count-qs)
+	    
+	      
+				- [DudeDateMinQs](#dude-date-min-qs)
+	    
+	      
+				- [DudeDateMaxQs](#dude-date-max-qs)
+	    
+	      
+				- [DudeDateCountQs](#dude-date-count-qs)
+	    
+	      
+				- [DudeFloatAvgQs](#dude-float-avg-qs)
+	    
+	      
+				- [DudeFloatMinQs](#dude-float-min-qs)
+	    
+	      
+				- [DudeFloatMaxQs](#dude-float-max-qs)
+	    
+	      
+				- [DudeFloatCountQs](#dude-float-count-qs)
+	    
+	      
+				- [DudeFloatSumQs](#dude-float-sum-qs)
+	    
+	      
+				- [DudeIntegerAvgQs](#dude-integer-avg-qs)
+	    
+	      
+				- [DudeIntegerMinQs](#dude-integer-min-qs)
+	    
+	      
+				- [DudeIntegerMaxQs](#dude-integer-max-qs)
+	    
+	      
+				- [DudeIntegerCountQs](#dude-integer-count-qs)
+	    
+	      
+				- [DudeIntegerSumQs](#dude-integer-sum-qs)
+	    
+	      
+				- [DudeStringCountQs](#dude-string-count-qs)
+	    
+	      
+				- [DudeTimeMinQs](#dude-time-min-qs)
+	    
+	      
+				- [DudeTimeMaxQs](#dude-time-max-qs)
+	    
+	      
+				- [DudeTimeCountQs](#dude-time-count-qs)
+	    
+	      
+				- [DudeFloatOpTestQsEq](#dude-float-op-test-qs-eq)
+	    
+	      
+				- [DudeFloatOpTestQsNe](#dude-float-op-test-qs-ne)
+	    
+	      
+				- [DudeFloatOpTestQsGe](#dude-float-op-test-qs-ge)
+	    
+	      
+				- [DudeFloatOpTestQsLe](#dude-float-op-test-qs-le)
+	    
+	      
+				- [DudeFloatOpTestQsGt](#dude-float-op-test-qs-gt)
+	    
+	      
+				- [DudeFloatOpTestQsLt](#dude-float-op-test-qs-lt)
+	    
+	      
+				- [DudeBooleanOpTestQsEq](#dude-boolean-op-test-qs-eq)
+	    
+	      
+				- [DudeBooleanOpTestQsNe](#dude-boolean-op-test-qs-ne)
+	    
+	      
+				- [DudeBooleanOpTestQsGe](#dude-boolean-op-test-qs-ge)
+	    
+	      
+				- [DudeBooleanOpTestQsLe](#dude-boolean-op-test-qs-le)
+	    
+	      
+				- [DudeBooleanOpTestQsGt](#dude-boolean-op-test-qs-gt)
+	    
+	      
+				- [DudeBooleanOpTestQsLt](#dude-boolean-op-test-qs-lt)
+	    
+	      
+				- [DudeIntegerOpTestQsEq](#dude-integer-op-test-qs-eq)
+	    
+	      
+				- [DudeIntegerOpTestQsNe](#dude-integer-op-test-qs-ne)
+	    
+	      
+				- [DudeIntegerOpTestQsGe](#dude-integer-op-test-qs-ge)
+	    
+	      
+				- [DudeIntegerOpTestQsLe](#dude-integer-op-test-qs-le)
+	    
+	      
+				- [DudeIntegerOpTestQsGt](#dude-integer-op-test-qs-gt)
+	    
+	      
+				- [DudeIntegerOpTestQsLt](#dude-integer-op-test-qs-lt)
+	    
+	      
+				- [DudeStringOpTestQsEq](#dude-string-op-test-qs-eq)
+	    
+	      
+				- [DudeStringOpTestQsNe](#dude-string-op-test-qs-ne)
+	    
+	      
+				- [DudeStringOpTestQsGe](#dude-string-op-test-qs-ge)
+	    
+	      
+				- [DudeStringOpTestQsLe](#dude-string-op-test-qs-le)
+	    
+	      
+				- [DudeStringOpTestQsGt](#dude-string-op-test-qs-gt)
+	    
+	      
+				- [DudeStringOpTestQsLt](#dude-string-op-test-qs-lt)
+	    
+	      
+				- [DudeDateOpTestQsEq](#dude-date-op-test-qs-eq)
+	    
+	      
+				- [DudeDateOpTestQsNe](#dude-date-op-test-qs-ne)
+	    
+	      
+				- [DudeDateOpTestQsGe](#dude-date-op-test-qs-ge)
+	    
+	      
+				- [DudeDateOpTestQsLe](#dude-date-op-test-qs-le)
+	    
+	      
+				- [DudeDateOpTestQsGt](#dude-date-op-test-qs-gt)
+	    
+	      
+				- [DudeDateOpTestQsLt](#dude-date-op-test-qs-lt)
+	    
+	      
+				- [DudeTimeOpTestQsEq](#dude-time-op-test-qs-eq)
+	    
+	      
+				- [DudeTimeOpTestQsNe](#dude-time-op-test-qs-ne)
+	    
+	      
+				- [DudeTimeOpTestQsGe](#dude-time-op-test-qs-ge)
+	    
+	      
+				- [DudeTimeOpTestQsLe](#dude-time-op-test-qs-le)
+	    
+	      
+				- [DudeTimeOpTestQsGt](#dude-time-op-test-qs-gt)
+	    
+	      
+				- [DudeTimeOpTestQsLt](#dude-time-op-test-qs-lt)
+	    
+	      
+				- [DudeFloatIgnoreBlankTrueQs](#dude-float-ignore-blank-true-qs)
+	    
+	      
+				- [DudeFloatIgnoreBlankFalseQs](#dude-float-ignore-blank-false-qs)
+	    
+	      
+				- [DudeBooleanIgnoreBlankTrueQs](#dude-boolean-ignore-blank-true-qs)
+	    
+	      
+				- [DudeBooleanIgnoreBlankFalseQs](#dude-boolean-ignore-blank-false-qs)
+	    
+	      
+				- [DudeIntegerIgnoreBlankTrueQs](#dude-integer-ignore-blank-true-qs)
+	    
+	      
+				- [DudeIntegerIgnoreBlankFalseQs](#dude-integer-ignore-blank-false-qs)
+	    
+	      
+				- [DudeStringIgnoreBlankTrueQs](#dude-string-ignore-blank-true-qs)
+	    
+	      
+				- [DudeStringIgnoreBlankFalseQs](#dude-string-ignore-blank-false-qs)
+	    
+	      
+				- [DudeDateIgnoreBlankTrueQs](#dude-date-ignore-blank-true-qs)
+	    
+	      
+				- [DudeDateIgnoreBlankFalseQs](#dude-date-ignore-blank-false-qs)
+	    
+	      
+				- [DudeTimeIgnoreBlankTrueQs](#dude-time-ignore-blank-true-qs)
+	    
+	      
+				- [DudeTimeIgnoreBlankFalseQs](#dude-time-ignore-blank-false-qs)
+	    
+	      
+				- [DudeUserIdQs](#dude-user-id-qs)
+	    
+	      
+				- [DudeCustomObjectQueryScope](#dude-custom-object-query-scope)
+	    
+	      
+				- [DudeParamNameQs](#dude-param-name-qs)
+	    
+	      
+				- [DudeSingleJoinOrQs](#dude-single-join-or-qs)
+	    
+	      
+				- [DudeSingleJoinAndQs](#dude-single-join-and-qs)
+	    
+	      
+				- [DudeMultiJoinQsFirst](#dude-multi-join-qs-first)
+	    
+	      
+				- [DudeMultiJoinQsSecond](#dude-multi-join-qs-second)
+	    
+	      
+				- [DudeMultiJoinQsThird](#dude-multi-join-qs-third)
+	    
+	      
+				- [DudeMultiJoinQsFourth](#dude-multi-join-qs-fourth)
+	    
+	      
+				- [DudeMultiJoinQsFifth](#dude-multi-join-qs-fifth)
+	    
+	      
+				- [DudeTestQs](#dude-test-qs)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Dude](#dude)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
-	      
-	        
-					- [DudeAll](#dude-all)
-	      
-	        
-					- [DudeExactMatch](#dude-exact-match)
-	      
-	        
-					- [DudeCount](#dude-count)
-	      
-	        
-					- [DudeCountExactMatch](#dude-count-exact-match)
-	      
-	        
-					- [DudeBooleanAssignableQs](#dude-boolean-assignable-qs)
-	      
-	        
-					- [DudeDateAssignableQs](#dude-date-assignable-qs)
-	      
-	        
-					- [DudeTimeAssignableQs](#dude-time-assignable-qs)
-	      
-	        
-					- [DudeFloatAssignableQs](#dude-float-assignable-qs)
-	      
-	        
-					- [DudeIntegerAssignableQs](#dude-integer-assignable-qs)
-	      
-	        
-					- [DudeStringAssignableQs](#dude-string-assignable-qs)
-	      
-	        
-					- [DudeBooleanDefaultValueQs](#dude-boolean-default-value-qs)
-	      
-	        
-					- [DudeBooleanCountQs](#dude-boolean-count-qs)
-	      
-	        
-					- [DudeDateMinQs](#dude-date-min-qs)
-	      
-	        
-					- [DudeDateMaxQs](#dude-date-max-qs)
-	      
-	        
-					- [DudeDateCountQs](#dude-date-count-qs)
-	      
-	        
-					- [DudeFloatAvgQs](#dude-float-avg-qs)
-	      
-	        
-					- [DudeFloatMinQs](#dude-float-min-qs)
-	      
-	        
-					- [DudeFloatMaxQs](#dude-float-max-qs)
-	      
-	        
-					- [DudeFloatCountQs](#dude-float-count-qs)
-	      
-	        
-					- [DudeFloatSumQs](#dude-float-sum-qs)
-	      
-	        
-					- [DudeIntegerAvgQs](#dude-integer-avg-qs)
-	      
-	        
-					- [DudeIntegerMinQs](#dude-integer-min-qs)
-	      
-	        
-					- [DudeIntegerMaxQs](#dude-integer-max-qs)
-	      
-	        
-					- [DudeIntegerCountQs](#dude-integer-count-qs)
-	      
-	        
-					- [DudeIntegerSumQs](#dude-integer-sum-qs)
-	      
-	        
-					- [DudeStringCountQs](#dude-string-count-qs)
-	      
-	        
-					- [DudeTimeMinQs](#dude-time-min-qs)
-	      
-	        
-					- [DudeTimeMaxQs](#dude-time-max-qs)
-	      
-	        
-					- [DudeTimeCountQs](#dude-time-count-qs)
-	      
-	        
-					- [DudeFloatOpTestQsEq](#dude-float-op-test-qs-eq)
-	      
-	        
-					- [DudeFloatOpTestQsNe](#dude-float-op-test-qs-ne)
-	      
-	        
-					- [DudeFloatOpTestQsGe](#dude-float-op-test-qs-ge)
-	      
-	        
-					- [DudeFloatOpTestQsLe](#dude-float-op-test-qs-le)
-	      
-	        
-					- [DudeFloatOpTestQsGt](#dude-float-op-test-qs-gt)
-	      
-	        
-					- [DudeFloatOpTestQsLt](#dude-float-op-test-qs-lt)
-	      
-	        
-					- [DudeBooleanOpTestQsEq](#dude-boolean-op-test-qs-eq)
-	      
-	        
-					- [DudeBooleanOpTestQsNe](#dude-boolean-op-test-qs-ne)
-	      
-	        
-					- [DudeBooleanOpTestQsGe](#dude-boolean-op-test-qs-ge)
-	      
-	        
-					- [DudeBooleanOpTestQsLe](#dude-boolean-op-test-qs-le)
-	      
-	        
-					- [DudeBooleanOpTestQsGt](#dude-boolean-op-test-qs-gt)
-	      
-	        
-					- [DudeBooleanOpTestQsLt](#dude-boolean-op-test-qs-lt)
-	      
-	        
-					- [DudeIntegerOpTestQsEq](#dude-integer-op-test-qs-eq)
-	      
-	        
-					- [DudeIntegerOpTestQsNe](#dude-integer-op-test-qs-ne)
-	      
-	        
-					- [DudeIntegerOpTestQsGe](#dude-integer-op-test-qs-ge)
-	      
-	        
-					- [DudeIntegerOpTestQsLe](#dude-integer-op-test-qs-le)
-	      
-	        
-					- [DudeIntegerOpTestQsGt](#dude-integer-op-test-qs-gt)
-	      
-	        
-					- [DudeIntegerOpTestQsLt](#dude-integer-op-test-qs-lt)
-	      
-	        
-					- [DudeStringOpTestQsEq](#dude-string-op-test-qs-eq)
-	      
-	        
-					- [DudeStringOpTestQsNe](#dude-string-op-test-qs-ne)
-	      
-	        
-					- [DudeStringOpTestQsGe](#dude-string-op-test-qs-ge)
-	      
-	        
-					- [DudeStringOpTestQsLe](#dude-string-op-test-qs-le)
-	      
-	        
-					- [DudeStringOpTestQsGt](#dude-string-op-test-qs-gt)
-	      
-	        
-					- [DudeStringOpTestQsLt](#dude-string-op-test-qs-lt)
-	      
-	        
-					- [DudeDateOpTestQsEq](#dude-date-op-test-qs-eq)
-	      
-	        
-					- [DudeDateOpTestQsNe](#dude-date-op-test-qs-ne)
-	      
-	        
-					- [DudeDateOpTestQsGe](#dude-date-op-test-qs-ge)
-	      
-	        
-					- [DudeDateOpTestQsLe](#dude-date-op-test-qs-le)
-	      
-	        
-					- [DudeDateOpTestQsGt](#dude-date-op-test-qs-gt)
-	      
-	        
-					- [DudeDateOpTestQsLt](#dude-date-op-test-qs-lt)
-	      
-	        
-					- [DudeTimeOpTestQsEq](#dude-time-op-test-qs-eq)
-	      
-	        
-					- [DudeTimeOpTestQsNe](#dude-time-op-test-qs-ne)
-	      
-	        
-					- [DudeTimeOpTestQsGe](#dude-time-op-test-qs-ge)
-	      
-	        
-					- [DudeTimeOpTestQsLe](#dude-time-op-test-qs-le)
-	      
-	        
-					- [DudeTimeOpTestQsGt](#dude-time-op-test-qs-gt)
-	      
-	        
-					- [DudeTimeOpTestQsLt](#dude-time-op-test-qs-lt)
-	      
-	        
-					- [DudeFloatIgnoreBlankTrueQs](#dude-float-ignore-blank-true-qs)
-	      
-	        
-					- [DudeFloatIgnoreBlankFalseQs](#dude-float-ignore-blank-false-qs)
-	      
-	        
-					- [DudeBooleanIgnoreBlankTrueQs](#dude-boolean-ignore-blank-true-qs)
-	      
-	        
-					- [DudeBooleanIgnoreBlankFalseQs](#dude-boolean-ignore-blank-false-qs)
-	      
-	        
-					- [DudeIntegerIgnoreBlankTrueQs](#dude-integer-ignore-blank-true-qs)
-	      
-	        
-					- [DudeIntegerIgnoreBlankFalseQs](#dude-integer-ignore-blank-false-qs)
-	      
-	        
-					- [DudeStringIgnoreBlankTrueQs](#dude-string-ignore-blank-true-qs)
-	      
-	        
-					- [DudeStringIgnoreBlankFalseQs](#dude-string-ignore-blank-false-qs)
-	      
-	        
-					- [DudeDateIgnoreBlankTrueQs](#dude-date-ignore-blank-true-qs)
-	      
-	        
-					- [DudeDateIgnoreBlankFalseQs](#dude-date-ignore-blank-false-qs)
-	      
-	        
-					- [DudeTimeIgnoreBlankTrueQs](#dude-time-ignore-blank-true-qs)
-	      
-	        
-					- [DudeTimeIgnoreBlankFalseQs](#dude-time-ignore-blank-false-qs)
-	      
-	        
-					- [DudeUserIdQs](#dude-user-id-qs)
-	      
-	        
-					- [DudeCustomObjectQueryScope](#dude-custom-object-query-scope)
-	      
-	        
-					- [DudeParamNameQs](#dude-param-name-qs)
-	      
-	        
-					- [DudeSingleJoinOrQs](#dude-single-join-or-qs)
-	      
-	        
-					- [DudeSingleJoinAndQs](#dude-single-join-and-qs)
-	      
-	        
-					- [DudeMultiJoinQsFirst](#dude-multi-join-qs-first)
-	      
-	        
-					- [DudeMultiJoinQsSecond](#dude-multi-join-qs-second)
-	      
-	        
-					- [DudeMultiJoinQsThird](#dude-multi-join-qs-third)
-	      
-	        
-					- [DudeMultiJoinQsFourth](#dude-multi-join-qs-fourth)
-	      
-	        
-					- [DudeMultiJoinQsFifth](#dude-multi-join-qs-fifth)
-	      
-	        
-					- [DudeTestQs](#dude-test-qs)
-	      
-	      
-	      
-	      
+    
+		- [Friend](#friend)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
+	      
+				- [FriendAll](#friend-all)
+	    
+	      
+				- [FriendExactMatch](#friend-exact-match)
+	    
+	      
+				- [FriendCount](#friend-count)
+	    
+	      
+				- [FriendCountExactMatch](#friend-count-exact-match)
+	    
+	      
+				- [FriendHiddenQs](#friend-hidden-qs)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Friend](#friend)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Goat](#goat)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [FriendAll](#friend-all)
+				- [GoatAll](#goat-all)
+	    
 	      
-	        
-					- [FriendExactMatch](#friend-exact-match)
+				- [GoatExactMatch](#goat-exact-match)
+	    
 	      
-	        
-					- [FriendCount](#friend-count)
+				- [GoatCount](#goat-count)
+	    
 	      
-	        
-					- [FriendCountExactMatch](#friend-count-exact-match)
-	      
-	        
-					- [FriendHiddenQs](#friend-hidden-qs)
-	      
-	      
-	      
-	      
+				- [GoatCountExactMatch](#goat-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Goat](#goat)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [House](#house)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [GoatAll](#goat-all)
+				- [HouseAll](#house-all)
+	    
 	      
-	        
-					- [GoatExactMatch](#goat-exact-match)
+				- [HouseExactMatch](#house-exact-match)
+	    
 	      
-	        
-					- [GoatCount](#goat-count)
+				- [HouseCount](#house-count)
+	    
 	      
-	        
-					- [GoatCountExactMatch](#goat-count-exact-match)
-	      
-	      
-	      
-	      
+				- [HouseCountExactMatch](#house-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [House](#house)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [IncomingContact](#incoming-contact)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [HouseAll](#house-all)
+				- [IncomingContactAll](#incoming-contact-all)
+	    
 	      
-	        
-					- [HouseExactMatch](#house-exact-match)
+				- [IncomingContactExactMatch](#incoming-contact-exact-match)
+	    
 	      
-	        
-					- [HouseCount](#house-count)
+				- [IncomingContactCount](#incoming-contact-count)
+	    
 	      
-	        
-					- [HouseCountExactMatch](#house-count-exact-match)
-	      
-	      
-	      
-	      
+				- [IncomingContactCountExactMatch](#incoming-contact-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [IncomingContact](#incoming-contact)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Man](#man)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [IncomingContactAll](#incoming-contact-all)
+				- [ManAll](#man-all)
+	    
 	      
-	        
-					- [IncomingContactExactMatch](#incoming-contact-exact-match)
+				- [ManExactMatch](#man-exact-match)
+	    
 	      
-	        
-					- [IncomingContactCount](#incoming-contact-count)
+				- [ManCount](#man-count)
+	    
 	      
-	        
-					- [IncomingContactCountExactMatch](#incoming-contact-count-exact-match)
-	      
-	      
-	      
-	      
+				- [ManCountExactMatch](#man-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Man](#man)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Monkey](#monkey)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [ManAll](#man-all)
+				- [MonkeyAll](#monkey-all)
+	    
 	      
-	        
-					- [ManExactMatch](#man-exact-match)
+				- [MonkeyExactMatch](#monkey-exact-match)
+	    
 	      
-	        
-					- [ManCount](#man-count)
+				- [MonkeyCount](#monkey-count)
+	    
 	      
-	        
-					- [ManCountExactMatch](#man-count-exact-match)
-	      
-	      
-	      
-	      
+				- [MonkeyCountExactMatch](#monkey-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Monkey](#monkey)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Order](#order)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [MonkeyAll](#monkey-all)
+				- [OrderAll](#order-all)
+	    
 	      
-	        
-					- [MonkeyExactMatch](#monkey-exact-match)
+				- [OrderExactMatch](#order-exact-match)
+	    
 	      
-	        
-					- [MonkeyCount](#monkey-count)
+				- [OrderCount](#order-count)
+	    
 	      
-	        
-					- [MonkeyCountExactMatch](#monkey-count-exact-match)
+				- [OrderCountExactMatch](#order-count-exact-match)
+	    
 	      
+				- [OrderOrdersInAmountRange](#order-orders-in-amount-range)
+	    
 	      
+				- [OrderPaidOrdersAnd](#order-paid-orders-and)
+	    
 	      
+				- [OrderPaidOrdersOr](#order-paid-orders-or)
+	    
 	      
+				- [OrderCurrentUserOrders](#order-current-user-orders)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Order](#order)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Outage](#outage)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [OrderAll](#order-all)
+				- [OutageAll](#outage-all)
+	    
 	      
-	        
-					- [OrderExactMatch](#order-exact-match)
+				- [OutageExactMatch](#outage-exact-match)
+	    
 	      
-	        
-					- [OrderCount](#order-count)
+				- [OutageCount](#outage-count)
+	    
 	      
-	        
-					- [OrderCountExactMatch](#order-count-exact-match)
-	      
-	        
-					- [OrderOrdersInAmountRange](#order-orders-in-amount-range)
-	      
-	        
-					- [OrderPaidOrdersAnd](#order-paid-orders-and)
-	      
-	        
-					- [OrderPaidOrdersOr](#order-paid-orders-or)
-	      
-	        
-					- [OrderCurrentUserOrders](#order-current-user-orders)
-	      
-	      
-	      
-	      
+				- [OutageCountExactMatch](#outage-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Outage](#outage)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Pal](#pal)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [OutageAll](#outage-all)
+				- [PalAll](#pal-all)
+	    
 	      
-	        
-					- [OutageExactMatch](#outage-exact-match)
+				- [PalExactMatch](#pal-exact-match)
+	    
 	      
-	        
-					- [OutageCount](#outage-count)
+				- [PalCount](#pal-count)
+	    
 	      
-	        
-					- [OutageCountExactMatch](#outage-count-exact-match)
-	      
-	      
-	      
-	      
+				- [PalCountExactMatch](#pal-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Pal](#pal)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Patient](#patient)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [PalAll](#pal-all)
+				- [PatientAll](#patient-all)
+	    
 	      
-	        
-					- [PalExactMatch](#pal-exact-match)
+				- [PatientExactMatch](#patient-exact-match)
+	    
 	      
-	        
-					- [PalCount](#pal-count)
+				- [PatientCount](#patient-count)
+	    
 	      
-	        
-					- [PalCountExactMatch](#pal-count-exact-match)
-	      
-	      
-	      
-	      
+				- [PatientCountExactMatch](#patient-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Patient](#patient)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Product](#product)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [PatientAll](#patient-all)
+				- [ProductAll](#product-all)
+	    
 	      
-	        
-					- [PatientExactMatch](#patient-exact-match)
+				- [ProductExactMatch](#product-exact-match)
+	    
 	      
-	        
-					- [PatientCount](#patient-count)
+				- [ProductCount](#product-count)
+	    
 	      
-	        
-					- [PatientCountExactMatch](#patient-count-exact-match)
+				- [ProductCountExactMatch](#product-count-exact-match)
+	    
 	      
+				- [ProductSale](#product-sale)
+	    
 	      
-	      
-	      
+				- [ProductProductsByCategory](#product-products-by-category)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Product](#product)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [RelationalDude](#relational-dude)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [ProductAll](#product-all)
+				- [RelationalDudeAll](#relational-dude-all)
+	    
 	      
-	        
-					- [ProductExactMatch](#product-exact-match)
+				- [RelationalDudeExactMatch](#relational-dude-exact-match)
+	    
 	      
-	        
-					- [ProductCount](#product-count)
+				- [RelationalDudeCount](#relational-dude-count)
+	    
 	      
-	        
-					- [ProductCountExactMatch](#product-count-exact-match)
+				- [RelationalDudeCountExactMatch](#relational-dude-count-exact-match)
+	    
 	      
-	        
-					- [ProductSale](#product-sale)
+				- [RelationalDudeBooleanAssignableQs](#relational-dude-boolean-assignable-qs)
+	    
 	      
-	        
-					- [ProductProductsByCategory](#product-products-by-category)
+				- [RelationalDudeDateAssignableQs](#relational-dude-date-assignable-qs)
+	    
 	      
+				- [RelationalDudeTimeAssignableQs](#relational-dude-time-assignable-qs)
+	    
 	      
+				- [RelationalDudeFloatAssignableQs](#relational-dude-float-assignable-qs)
+	    
 	      
+				- [RelationalDudeIntegerAssignableQs](#relational-dude-integer-assignable-qs)
+	    
 	      
+				- [RelationalDudeStringAssignableQs](#relational-dude-string-assignable-qs)
+	    
+	      
+				- [RelationalDudeBooleanDefaultValueQs](#relational-dude-boolean-default-value-qs)
+	    
+	      
+				- [RelationalDudeBooleanCountQs](#relational-dude-boolean-count-qs)
+	    
+	      
+				- [RelationalDudeDateMinQs](#relational-dude-date-min-qs)
+	    
+	      
+				- [RelationalDudeDateMaxQs](#relational-dude-date-max-qs)
+	    
+	      
+				- [RelationalDudeDateCountQs](#relational-dude-date-count-qs)
+	    
+	      
+				- [RelationalDudeFloatAvgQs](#relational-dude-float-avg-qs)
+	    
+	      
+				- [RelationalDudeFloatMinQs](#relational-dude-float-min-qs)
+	    
+	      
+				- [RelationalDudeFloatMaxQs](#relational-dude-float-max-qs)
+	    
+	      
+				- [RelationalDudeFloatCountQs](#relational-dude-float-count-qs)
+	    
+	      
+				- [RelationalDudeFloatSumQs](#relational-dude-float-sum-qs)
+	    
+	      
+				- [RelationalDudeIntegerAvgQs](#relational-dude-integer-avg-qs)
+	    
+	      
+				- [RelationalDudeIntegerMinQs](#relational-dude-integer-min-qs)
+	    
+	      
+				- [RelationalDudeIntegerMaxQs](#relational-dude-integer-max-qs)
+	    
+	      
+				- [RelationalDudeIntegerCountQs](#relational-dude-integer-count-qs)
+	    
+	      
+				- [RelationalDudeIntegerSumQs](#relational-dude-integer-sum-qs)
+	    
+	      
+				- [RelationalDudeStringCountQs](#relational-dude-string-count-qs)
+	    
+	      
+				- [RelationalDudeTimeMinQs](#relational-dude-time-min-qs)
+	    
+	      
+				- [RelationalDudeTimeMaxQs](#relational-dude-time-max-qs)
+	    
+	      
+				- [RelationalDudeTimeCountQs](#relational-dude-time-count-qs)
+	    
+	      
+				- [RelationalDudeFloatOpTestQsEq](#relational-dude-float-op-test-qs-eq)
+	    
+	      
+				- [RelationalDudeFloatOpTestQsNe](#relational-dude-float-op-test-qs-ne)
+	    
+	      
+				- [RelationalDudeFloatOpTestQsGe](#relational-dude-float-op-test-qs-ge)
+	    
+	      
+				- [RelationalDudeFloatOpTestQsLe](#relational-dude-float-op-test-qs-le)
+	    
+	      
+				- [RelationalDudeFloatOpTestQsGt](#relational-dude-float-op-test-qs-gt)
+	    
+	      
+				- [RelationalDudeFloatOpTestQsLt](#relational-dude-float-op-test-qs-lt)
+	    
+	      
+				- [RelationalDudeBooleanOpTestQsEq](#relational-dude-boolean-op-test-qs-eq)
+	    
+	      
+				- [RelationalDudeBooleanOpTestQsNe](#relational-dude-boolean-op-test-qs-ne)
+	    
+	      
+				- [RelationalDudeBooleanOpTestQsGe](#relational-dude-boolean-op-test-qs-ge)
+	    
+	      
+				- [RelationalDudeBooleanOpTestQsLe](#relational-dude-boolean-op-test-qs-le)
+	    
+	      
+				- [RelationalDudeBooleanOpTestQsGt](#relational-dude-boolean-op-test-qs-gt)
+	    
+	      
+				- [RelationalDudeBooleanOpTestQsLt](#relational-dude-boolean-op-test-qs-lt)
+	    
+	      
+				- [RelationalDudeIntegerOpTestQsEq](#relational-dude-integer-op-test-qs-eq)
+	    
+	      
+				- [RelationalDudeIntegerOpTestQsNe](#relational-dude-integer-op-test-qs-ne)
+	    
+	      
+				- [RelationalDudeIntegerOpTestQsGe](#relational-dude-integer-op-test-qs-ge)
+	    
+	      
+				- [RelationalDudeIntegerOpTestQsLe](#relational-dude-integer-op-test-qs-le)
+	    
+	      
+				- [RelationalDudeIntegerOpTestQsGt](#relational-dude-integer-op-test-qs-gt)
+	    
+	      
+				- [RelationalDudeIntegerOpTestQsLt](#relational-dude-integer-op-test-qs-lt)
+	    
+	      
+				- [RelationalDudeStringOpTestQsEq](#relational-dude-string-op-test-qs-eq)
+	    
+	      
+				- [RelationalDudeStringOpTestQsNe](#relational-dude-string-op-test-qs-ne)
+	    
+	      
+				- [RelationalDudeStringOpTestQsGe](#relational-dude-string-op-test-qs-ge)
+	    
+	      
+				- [RelationalDudeStringOpTestQsLe](#relational-dude-string-op-test-qs-le)
+	    
+	      
+				- [RelationalDudeStringOpTestQsGt](#relational-dude-string-op-test-qs-gt)
+	    
+	      
+				- [RelationalDudeStringOpTestQsLt](#relational-dude-string-op-test-qs-lt)
+	    
+	      
+				- [RelationalDudeDateOpTestQsEq](#relational-dude-date-op-test-qs-eq)
+	    
+	      
+				- [RelationalDudeDateOpTestQsNe](#relational-dude-date-op-test-qs-ne)
+	    
+	      
+				- [RelationalDudeDateOpTestQsGe](#relational-dude-date-op-test-qs-ge)
+	    
+	      
+				- [RelationalDudeDateOpTestQsLe](#relational-dude-date-op-test-qs-le)
+	    
+	      
+				- [RelationalDudeDateOpTestQsGt](#relational-dude-date-op-test-qs-gt)
+	    
+	      
+				- [RelationalDudeDateOpTestQsLt](#relational-dude-date-op-test-qs-lt)
+	    
+	      
+				- [RelationalDudeTimeOpTestQsEq](#relational-dude-time-op-test-qs-eq)
+	    
+	      
+				- [RelationalDudeTimeOpTestQsNe](#relational-dude-time-op-test-qs-ne)
+	    
+	      
+				- [RelationalDudeTimeOpTestQsGe](#relational-dude-time-op-test-qs-ge)
+	    
+	      
+				- [RelationalDudeTimeOpTestQsLe](#relational-dude-time-op-test-qs-le)
+	    
+	      
+				- [RelationalDudeTimeOpTestQsGt](#relational-dude-time-op-test-qs-gt)
+	    
+	      
+				- [RelationalDudeTimeOpTestQsLt](#relational-dude-time-op-test-qs-lt)
+	    
+	      
+				- [RelationalDudeFloatIgnoreBlankTrueQs](#relational-dude-float-ignore-blank-true-qs)
+	    
+	      
+				- [RelationalDudeFloatIgnoreBlankFalseQs](#relational-dude-float-ignore-blank-false-qs)
+	    
+	      
+				- [RelationalDudeBooleanIgnoreBlankTrueQs](#relational-dude-boolean-ignore-blank-true-qs)
+	    
+	      
+				- [RelationalDudeBooleanIgnoreBlankFalseQs](#relational-dude-boolean-ignore-blank-false-qs)
+	    
+	      
+				- [RelationalDudeIntegerIgnoreBlankTrueQs](#relational-dude-integer-ignore-blank-true-qs)
+	    
+	      
+				- [RelationalDudeIntegerIgnoreBlankFalseQs](#relational-dude-integer-ignore-blank-false-qs)
+	    
+	      
+				- [RelationalDudeStringIgnoreBlankTrueQs](#relational-dude-string-ignore-blank-true-qs)
+	    
+	      
+				- [RelationalDudeStringIgnoreBlankFalseQs](#relational-dude-string-ignore-blank-false-qs)
+	    
+	      
+				- [RelationalDudeDateIgnoreBlankTrueQs](#relational-dude-date-ignore-blank-true-qs)
+	    
+	      
+				- [RelationalDudeDateIgnoreBlankFalseQs](#relational-dude-date-ignore-blank-false-qs)
+	    
+	      
+				- [RelationalDudeTimeIgnoreBlankTrueQs](#relational-dude-time-ignore-blank-true-qs)
+	    
+	      
+				- [RelationalDudeTimeIgnoreBlankFalseQs](#relational-dude-time-ignore-blank-false-qs)
+	    
+	      
+				- [RelationalDudeUserIdQs](#relational-dude-user-id-qs)
+	    
+	      
+				- [RelationalDudeCustomObjectQueryScope](#relational-dude-custom-object-query-scope)
+	    
+	      
+				- [RelationalDudeParamNameQs](#relational-dude-param-name-qs)
+	    
+	      
+				- [RelationalDudeSingleJoinOrQs](#relational-dude-single-join-or-qs)
+	    
+	      
+				- [RelationalDudeSingleJoinAndQs](#relational-dude-single-join-and-qs)
+	    
+	      
+				- [RelationalDudeMultiJoinQsFirst](#relational-dude-multi-join-qs-first)
+	    
+	      
+				- [RelationalDudeMultiJoinQsSecond](#relational-dude-multi-join-qs-second)
+	    
+	      
+				- [RelationalDudeMultiJoinQsThird](#relational-dude-multi-join-qs-third)
+	    
+	      
+				- [RelationalDudeMultiJoinQsFourth](#relational-dude-multi-join-qs-fourth)
+	    
+	      
+				- [RelationalDudeMultiJoinQsFifth](#relational-dude-multi-join-qs-fifth)
+	    
+	      
+				- [RelationalDudeTestQs](#relational-dude-test-qs)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [RelationalDude](#relational-dude)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
-	      
-	        
-					- [RelationalDudeAll](#relational-dude-all)
-	      
-	        
-					- [RelationalDudeExactMatch](#relational-dude-exact-match)
-	      
-	        
-					- [RelationalDudeCount](#relational-dude-count)
-	      
-	        
-					- [RelationalDudeCountExactMatch](#relational-dude-count-exact-match)
-	      
-	        
-					- [RelationalDudeBooleanAssignableQs](#relational-dude-boolean-assignable-qs)
-	      
-	        
-					- [RelationalDudeDateAssignableQs](#relational-dude-date-assignable-qs)
-	      
-	        
-					- [RelationalDudeTimeAssignableQs](#relational-dude-time-assignable-qs)
-	      
-	        
-					- [RelationalDudeFloatAssignableQs](#relational-dude-float-assignable-qs)
-	      
-	        
-					- [RelationalDudeIntegerAssignableQs](#relational-dude-integer-assignable-qs)
-	      
-	        
-					- [RelationalDudeStringAssignableQs](#relational-dude-string-assignable-qs)
-	      
-	        
-					- [RelationalDudeBooleanDefaultValueQs](#relational-dude-boolean-default-value-qs)
-	      
-	        
-					- [RelationalDudeBooleanCountQs](#relational-dude-boolean-count-qs)
-	      
-	        
-					- [RelationalDudeDateMinQs](#relational-dude-date-min-qs)
-	      
-	        
-					- [RelationalDudeDateMaxQs](#relational-dude-date-max-qs)
-	      
-	        
-					- [RelationalDudeDateCountQs](#relational-dude-date-count-qs)
-	      
-	        
-					- [RelationalDudeFloatAvgQs](#relational-dude-float-avg-qs)
-	      
-	        
-					- [RelationalDudeFloatMinQs](#relational-dude-float-min-qs)
-	      
-	        
-					- [RelationalDudeFloatMaxQs](#relational-dude-float-max-qs)
-	      
-	        
-					- [RelationalDudeFloatCountQs](#relational-dude-float-count-qs)
-	      
-	        
-					- [RelationalDudeFloatSumQs](#relational-dude-float-sum-qs)
-	      
-	        
-					- [RelationalDudeIntegerAvgQs](#relational-dude-integer-avg-qs)
-	      
-	        
-					- [RelationalDudeIntegerMinQs](#relational-dude-integer-min-qs)
-	      
-	        
-					- [RelationalDudeIntegerMaxQs](#relational-dude-integer-max-qs)
-	      
-	        
-					- [RelationalDudeIntegerCountQs](#relational-dude-integer-count-qs)
-	      
-	        
-					- [RelationalDudeIntegerSumQs](#relational-dude-integer-sum-qs)
-	      
-	        
-					- [RelationalDudeStringCountQs](#relational-dude-string-count-qs)
-	      
-	        
-					- [RelationalDudeTimeMinQs](#relational-dude-time-min-qs)
-	      
-	        
-					- [RelationalDudeTimeMaxQs](#relational-dude-time-max-qs)
-	      
-	        
-					- [RelationalDudeTimeCountQs](#relational-dude-time-count-qs)
-	      
-	        
-					- [RelationalDudeFloatOpTestQsEq](#relational-dude-float-op-test-qs-eq)
-	      
-	        
-					- [RelationalDudeFloatOpTestQsNe](#relational-dude-float-op-test-qs-ne)
-	      
-	        
-					- [RelationalDudeFloatOpTestQsGe](#relational-dude-float-op-test-qs-ge)
-	      
-	        
-					- [RelationalDudeFloatOpTestQsLe](#relational-dude-float-op-test-qs-le)
-	      
-	        
-					- [RelationalDudeFloatOpTestQsGt](#relational-dude-float-op-test-qs-gt)
-	      
-	        
-					- [RelationalDudeFloatOpTestQsLt](#relational-dude-float-op-test-qs-lt)
-	      
-	        
-					- [RelationalDudeBooleanOpTestQsEq](#relational-dude-boolean-op-test-qs-eq)
-	      
-	        
-					- [RelationalDudeBooleanOpTestQsNe](#relational-dude-boolean-op-test-qs-ne)
-	      
-	        
-					- [RelationalDudeBooleanOpTestQsGe](#relational-dude-boolean-op-test-qs-ge)
-	      
-	        
-					- [RelationalDudeBooleanOpTestQsLe](#relational-dude-boolean-op-test-qs-le)
-	      
-	        
-					- [RelationalDudeBooleanOpTestQsGt](#relational-dude-boolean-op-test-qs-gt)
-	      
-	        
-					- [RelationalDudeBooleanOpTestQsLt](#relational-dude-boolean-op-test-qs-lt)
-	      
-	        
-					- [RelationalDudeIntegerOpTestQsEq](#relational-dude-integer-op-test-qs-eq)
-	      
-	        
-					- [RelationalDudeIntegerOpTestQsNe](#relational-dude-integer-op-test-qs-ne)
-	      
-	        
-					- [RelationalDudeIntegerOpTestQsGe](#relational-dude-integer-op-test-qs-ge)
-	      
-	        
-					- [RelationalDudeIntegerOpTestQsLe](#relational-dude-integer-op-test-qs-le)
-	      
-	        
-					- [RelationalDudeIntegerOpTestQsGt](#relational-dude-integer-op-test-qs-gt)
-	      
-	        
-					- [RelationalDudeIntegerOpTestQsLt](#relational-dude-integer-op-test-qs-lt)
-	      
-	        
-					- [RelationalDudeStringOpTestQsEq](#relational-dude-string-op-test-qs-eq)
-	      
-	        
-					- [RelationalDudeStringOpTestQsNe](#relational-dude-string-op-test-qs-ne)
-	      
-	        
-					- [RelationalDudeStringOpTestQsGe](#relational-dude-string-op-test-qs-ge)
-	      
-	        
-					- [RelationalDudeStringOpTestQsLe](#relational-dude-string-op-test-qs-le)
-	      
-	        
-					- [RelationalDudeStringOpTestQsGt](#relational-dude-string-op-test-qs-gt)
-	      
-	        
-					- [RelationalDudeStringOpTestQsLt](#relational-dude-string-op-test-qs-lt)
-	      
-	        
-					- [RelationalDudeDateOpTestQsEq](#relational-dude-date-op-test-qs-eq)
-	      
-	        
-					- [RelationalDudeDateOpTestQsNe](#relational-dude-date-op-test-qs-ne)
-	      
-	        
-					- [RelationalDudeDateOpTestQsGe](#relational-dude-date-op-test-qs-ge)
-	      
-	        
-					- [RelationalDudeDateOpTestQsLe](#relational-dude-date-op-test-qs-le)
-	      
-	        
-					- [RelationalDudeDateOpTestQsGt](#relational-dude-date-op-test-qs-gt)
-	      
-	        
-					- [RelationalDudeDateOpTestQsLt](#relational-dude-date-op-test-qs-lt)
-	      
-	        
-					- [RelationalDudeTimeOpTestQsEq](#relational-dude-time-op-test-qs-eq)
-	      
-	        
-					- [RelationalDudeTimeOpTestQsNe](#relational-dude-time-op-test-qs-ne)
-	      
-	        
-					- [RelationalDudeTimeOpTestQsGe](#relational-dude-time-op-test-qs-ge)
-	      
-	        
-					- [RelationalDudeTimeOpTestQsLe](#relational-dude-time-op-test-qs-le)
-	      
-	        
-					- [RelationalDudeTimeOpTestQsGt](#relational-dude-time-op-test-qs-gt)
-	      
-	        
-					- [RelationalDudeTimeOpTestQsLt](#relational-dude-time-op-test-qs-lt)
-	      
-	        
-					- [RelationalDudeFloatIgnoreBlankTrueQs](#relational-dude-float-ignore-blank-true-qs)
-	      
-	        
-					- [RelationalDudeFloatIgnoreBlankFalseQs](#relational-dude-float-ignore-blank-false-qs)
-	      
-	        
-					- [RelationalDudeBooleanIgnoreBlankTrueQs](#relational-dude-boolean-ignore-blank-true-qs)
-	      
-	        
-					- [RelationalDudeBooleanIgnoreBlankFalseQs](#relational-dude-boolean-ignore-blank-false-qs)
-	      
-	        
-					- [RelationalDudeIntegerIgnoreBlankTrueQs](#relational-dude-integer-ignore-blank-true-qs)
-	      
-	        
-					- [RelationalDudeIntegerIgnoreBlankFalseQs](#relational-dude-integer-ignore-blank-false-qs)
-	      
-	        
-					- [RelationalDudeStringIgnoreBlankTrueQs](#relational-dude-string-ignore-blank-true-qs)
-	      
-	        
-					- [RelationalDudeStringIgnoreBlankFalseQs](#relational-dude-string-ignore-blank-false-qs)
-	      
-	        
-					- [RelationalDudeDateIgnoreBlankTrueQs](#relational-dude-date-ignore-blank-true-qs)
-	      
-	        
-					- [RelationalDudeDateIgnoreBlankFalseQs](#relational-dude-date-ignore-blank-false-qs)
-	      
-	        
-					- [RelationalDudeTimeIgnoreBlankTrueQs](#relational-dude-time-ignore-blank-true-qs)
-	      
-	        
-					- [RelationalDudeTimeIgnoreBlankFalseQs](#relational-dude-time-ignore-blank-false-qs)
-	      
-	        
-					- [RelationalDudeUserIdQs](#relational-dude-user-id-qs)
-	      
-	        
-					- [RelationalDudeCustomObjectQueryScope](#relational-dude-custom-object-query-scope)
-	      
-	        
-					- [RelationalDudeParamNameQs](#relational-dude-param-name-qs)
-	      
-	        
-					- [RelationalDudeSingleJoinOrQs](#relational-dude-single-join-or-qs)
-	      
-	        
-					- [RelationalDudeSingleJoinAndQs](#relational-dude-single-join-and-qs)
-	      
-	        
-					- [RelationalDudeMultiJoinQsFirst](#relational-dude-multi-join-qs-first)
-	      
-	        
-					- [RelationalDudeMultiJoinQsSecond](#relational-dude-multi-join-qs-second)
-	      
-	        
-					- [RelationalDudeMultiJoinQsThird](#relational-dude-multi-join-qs-third)
-	      
-	        
-					- [RelationalDudeMultiJoinQsFourth](#relational-dude-multi-join-qs-fourth)
-	      
-	        
-					- [RelationalDudeMultiJoinQsFifth](#relational-dude-multi-join-qs-fifth)
-	      
-	        
-					- [RelationalDudeTestQs](#relational-dude-test-qs)
-	      
-	      
-	      
-	      
+    
+		- [Restaurant](#restaurant)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
+	      
+				- [RestaurantAll](#restaurant-all)
+	    
+	      
+				- [RestaurantExactMatch](#restaurant-exact-match)
+	    
+	      
+				- [RestaurantCount](#restaurant-count)
+	    
+	      
+				- [RestaurantCountExactMatch](#restaurant-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Restaurant](#restaurant)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Robot](#robot)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [RestaurantAll](#restaurant-all)
+				- [RobotAll](#robot-all)
+	    
 	      
-	        
-					- [RestaurantExactMatch](#restaurant-exact-match)
+				- [RobotExactMatch](#robot-exact-match)
+	    
 	      
-	        
-					- [RestaurantCount](#restaurant-count)
+				- [RobotCount](#robot-count)
+	    
 	      
-	        
-					- [RestaurantCountExactMatch](#restaurant-count-exact-match)
-	      
-	      
-	      
-	      
+				- [RobotCountExactMatch](#robot-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Robot](#robot)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [SalesReport](#sales-report)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [RobotAll](#robot-all)
+				- [SalesReportAll](#sales-report-all)
+	    
 	      
-	        
-					- [RobotExactMatch](#robot-exact-match)
+				- [SalesReportExactMatch](#sales-report-exact-match)
+	    
 	      
-	        
-					- [RobotCount](#robot-count)
+				- [SalesReportCount](#sales-report-count)
+	    
 	      
-	        
-					- [RobotCountExactMatch](#robot-count-exact-match)
-	      
-	      
-	      
-	      
+				- [SalesReportCountExactMatch](#sales-report-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [SalesReport](#sales-report)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [SalesforceAccount](#salesforce-account)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [SalesReportAll](#sales-report-all)
+				- [SalesforceAccountAll](#salesforce-account-all)
+	    
 	      
-	        
-					- [SalesReportExactMatch](#sales-report-exact-match)
+				- [SalesforceAccountExactMatch](#salesforce-account-exact-match)
+	    
 	      
-	        
-					- [SalesReportCount](#sales-report-count)
+				- [SalesforceAccountCount](#salesforce-account-count)
+	    
 	      
-	        
-					- [SalesReportCountExactMatch](#sales-report-count-exact-match)
-	      
-	      
-	      
-	      
+				- [SalesforceAccountCountExactMatch](#salesforce-account-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [SalesforceAccount](#salesforce-account)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [SalesforceContact](#salesforce-contact)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [SalesforceAccountAll](#salesforce-account-all)
+				- [SalesforceContactAll](#salesforce-contact-all)
+	    
 	      
-	        
-					- [SalesforceAccountExactMatch](#salesforce-account-exact-match)
+				- [SalesforceContactExactMatch](#salesforce-contact-exact-match)
+	    
 	      
-	        
-					- [SalesforceAccountCount](#salesforce-account-count)
+				- [SalesforceContactCount](#salesforce-contact-count)
+	    
 	      
-	        
-					- [SalesforceAccountCountExactMatch](#salesforce-account-count-exact-match)
-	      
-	      
-	      
-	      
+				- [SalesforceContactCountExactMatch](#salesforce-contact-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [SalesforceContact](#salesforce-contact)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Store](#store)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [SalesforceContactAll](#salesforce-contact-all)
+				- [StoreAll](#store-all)
+	    
 	      
-	        
-					- [SalesforceContactExactMatch](#salesforce-contact-exact-match)
+				- [StoreExactMatch](#store-exact-match)
+	    
 	      
-	        
-					- [SalesforceContactCount](#salesforce-contact-count)
+				- [StoreCount](#store-count)
+	    
 	      
-	        
-					- [SalesforceContactCountExactMatch](#salesforce-contact-count-exact-match)
-	      
-	      
-	      
-	      
+				- [StoreCountExactMatch](#store-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Store](#store)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [Subscriber](#subscriber)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [StoreAll](#store-all)
+				- [SubscriberAll](#subscriber-all)
+	    
 	      
-	        
-					- [StoreExactMatch](#store-exact-match)
+				- [SubscriberExactMatch](#subscriber-exact-match)
+	    
 	      
-	        
-					- [StoreCount](#store-count)
+				- [SubscriberCount](#subscriber-count)
+	    
 	      
-	        
-					- [StoreCountExactMatch](#store-count-exact-match)
-	      
-	      
-	      
-	      
+				- [SubscriberCountExactMatch](#subscriber-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [Subscriber](#subscriber)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+    
+		- [User](#user)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [SubscriberAll](#subscriber-all)
+				- [UserAll](#user-all)
+	    
 	      
-	        
-					- [SubscriberExactMatch](#subscriber-exact-match)
+				- [UserExactMatch](#user-exact-match)
+	    
 	      
-	        
-					- [SubscriberCount](#subscriber-count)
+				- [UserCount](#user-count)
+	    
 	      
-	        
-					- [SubscriberCountExactMatch](#subscriber-count-exact-match)
-	      
-	      
-	      
-	      
+				- [UserCountExactMatch](#user-count-exact-match)
+	    
+	    
+	    
+	    
+    
+    
     
       
-      
-        
-      
-			- [User](#user)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
-	      
-	        
-					- [UserAll](#user-all)
-	      
-	        
-					- [UserExactMatch](#user-exact-match)
-	      
-	        
-					- [UserCount](#user-count)
-	      
-	        
-					- [UserCountExactMatch](#user-count-exact-match)
-	      
-	      
-	      
-	      
     
-      
-      
-        
-      
-			- [Wizard](#wizard)
-				- [Create](#create-#{index-1})
-				- [Update](#update-#{index-1})
-				- [Read](#read-#{index-1})
-				- [Delete](#delete-#{index-1})
-				- [Query Scopes](#query-scopes-#{index-1})
+		- [Wizard](#wizard)
+			- [Create](#create-#{index-1})
+			- [Update](#update-#{index-1})
+			- [Read](#read-#{index-1})
+			- [Delete](#delete-#{index-1})
+			- [Query Scopes](#query-scopes-#{index-1})
+	    
 	      
-	        
-					- [WizardAll](#wizard-all)
+				- [WizardAll](#wizard-all)
+	    
 	      
-	        
-					- [WizardExactMatch](#wizard-exact-match)
+				- [WizardExactMatch](#wizard-exact-match)
+	    
 	      
-	        
-					- [WizardCount](#wizard-count)
+				- [WizardCount](#wizard-count)
+	    
 	      
-	        
-					- [WizardCountExactMatch](#wizard-count-exact-match)
-	      
-	      
-	      
-	      
+				- [WizardCountExactMatch](#wizard-count-exact-match)
+	    
+	    
+	    
+	    
     
 <!-- /TOC -->
 
