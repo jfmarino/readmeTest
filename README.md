@@ -9,7 +9,7 @@
 	- [Running Tests](#running-tests)
 - [Using the SDK](#using-the-sdk)
 	- [Working with Data](#working-with-data)
-		- [Working with `<%=j object_definition.name %>`](#working-with-j-objectdefinitionname-)
+		- [Working with](#working-with-j-objectdefinitionname-)
 	- [Authentication:  Login & Logout](#authentication-login-logout)
 <!-- /TOC -->
 
