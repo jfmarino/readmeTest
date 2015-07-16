@@ -17,9 +17,6 @@
 	- [Authentication:  Login & Logout](#authentication-login-logout)
 	- [Using local caching](#using-local-caching)
 	- [Models](#models)
-    
-      
-      
 			- [Account](#account)
 				- [Create](#create)
 				- [Update](#update)
