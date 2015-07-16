@@ -416,7 +416,7 @@ MODELNAMEInstance.interpolationContext = [{foo: bar}, window];
 
 This way you don't have to set it on every call.
 
-The next step is, if you would like **all** instances of a MODELNAME class to use the same context, you can set it in the prototype:
+The next step is, if you would like **all** instances of MODELNAME to use the same context, you can set it in the prototype:
 
 ```javascript
 SDKNAMESdk.models.MODELNAME.prototype.interpolationContext = [{foo: bar}, window];
