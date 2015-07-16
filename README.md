@@ -55,6 +55,8 @@ exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE }, {
 
 Here we are setting the attribute `ATTRIBUTENAME` in the Model to `TYPEVALUE` and then saving it. A complete representation of the Model is always sent to the server, regardless of which attributes you set in the save call.
 
+######Async
+
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
 ```javascript
@@ -87,6 +89,8 @@ exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE2 }, {patch: true});
 
 Just like in Model creation, even if you are not updating all Model attributes, a complete representation is sent to the server.
 
+######Async
+
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
 ```javascript
@@ -113,6 +117,8 @@ singleInstance.fetch({
   }
 });
 ```
+
+######Async
 
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
@@ -149,6 +155,8 @@ exampleModel.destroy({
 ```
 
 The `success` and `error` callback are optional as with other Backbone CRUD method calls.
+
+######Async
 
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
@@ -214,6 +222,8 @@ MODELNAMEAll.fetch({
 
 The first object passed represents the field values to match when executing the query. The second object is an options hash, where you can define `success` and `error` callbacks but also a `limit` and `offset` value if you want the query results to be paginated.
 
+######Async
+
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
 ```javascript
@@ -265,6 +275,8 @@ MODELNAMEExactMatch.fetch({
 });
 ```
 
+######Async
+
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
 ```javascript
@@ -311,6 +323,8 @@ MODELNAMECount.fetch({
 var amount = MODELNAMECount.valueOf();
 ```
 
+######Async
+
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
 ```javascript
@@ -354,6 +368,8 @@ MODELNAMECountExactMatch.fetch({
 // to access the amount
 var amount = MODELNAMECountExactMatch.valueOf();
 ```
+
+######Async
 
 This action is asynchronous by default, if you would like to execute it synchronously you can do:
 
