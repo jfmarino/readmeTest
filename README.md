@@ -386,3 +386,38 @@ var amount = MODELNAMECountExactMatch.valueOf();
 ```
 
 Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
+
+####Value interpolation
+
+On DirectToSource Models you can specify certain values of the request being made to use string interpolation, but you also need a way of specifying what the context is going to be during that operation.
+
+The interpolation context can be set in more than one way. If you would like to specify a context to be used for a specific call you would do:
+
+```javascript
+var MODELNAMEInstance = new SDKNAMESdk.models.MODELNAME();
+MODELNAMEInstance.save(
+  null, // passing null means we want to save all attributes
+  { // options
+    interpolationContext: [
+      {foo: bar},
+      window
+    ]
+  }
+);
+```
+
+**Note:** the interpolation context is always an *Array* of *Objects*. Those objects will be collapsed into a single Object which will then act as the context, so [{a: "a", b: "b", c: "c"}, {b: "B", d: "D"}] will end up as {a: "a", b: "B", c: "c", d: "D"}. Note that the Object with the highest index in the Array will overwrite previous ones.
+
+Another way to set the interpolation context is to set it on a MODELNAME instance, if you would like that instance to always use the same context you can just set it like this:
+
+```javascript
+MODELNAMEInstance.interpolationContext = [{foo: bar}, window];
+```
+
+This way you don't have to set it on every call.
+
+The next step is, if you would like **all** instances of a MODELNAME class to use the same context, you can set it in the prototype:
+
+```javascript
+SDKNAMESdk.models.MODELNAME.prototype.interpolationContext = [{foo: bar}, window];
+```
