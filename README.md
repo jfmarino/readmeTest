@@ -1,17 +1,4 @@
-<!-- TOC -->
-
-- [Developing with Grunt](#developing-with-grunt)
-	- [Prerequisites](#prerequisites)
-	- [Install NodeJS Modules](#install-nodejs-modules)
-	- [Build for Production](#build-for-production)
-	- [Development](#development)
-	- [Automatic Compilation & Testing](#automatic-compilation-testing)
-	- [Running Tests](#running-tests)
-- [Using the SDK](#using-the-sdk)
-	- [Working with Data](#working-with-data)
-		- [Working with](#working-with-j-objectdefinitionname-)
-	- [Authentication:  Login & Logout](#authentication-login-logout)
-<!-- /TOC -->
+[TOC]
 
 #SDKNAMESdk
 
