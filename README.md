@@ -11,6 +11,23 @@ SDKNAMESdk.init();
 
 If your application is *DirectToSource* then you can skip the base URL setup.
 
+##Using local caching
+
+Local caching can be toggled easily by setting the value of the Application variable `useOfflineCache` **before** initializing the SDK.
+
+```javascript
+SDKNAMESdk.useOfflineCache = true;
+SDKNAMESdk.init();
+```
+
+If you would like to activate it **after** initialization, you can use the method `initOfflineCache` on the SDK.
+
+```javascript
+SDKNAMESdk.initOfflineCache();
+```
+
+Keep in mind that once local caching has been enabled it cannot be disabled in runtime.
+
 ##Models
 
 Available Model objects:
