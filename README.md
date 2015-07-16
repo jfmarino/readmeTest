@@ -55,6 +55,20 @@ exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE }, {
 
 Here we are setting the attribute `ATTRIBUTENAME` in the Model to `TYPEVALUE` and then saving it. A complete representation of the Model is always sent to the server, regardless of which attributes you set in the save call.
 
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE }, {
+  async: false, // execute this request synchronously
+  success: function(model, response, options) {
+    // handle save success...
+  },
+  error: function(model, response, options) {
+    // handle error...
+  }
+});
+```
+
 Refer to [Backbone's Model save method](http://backbonejs.org/#Model-save) documentation for more information.
 
 ####Update
@@ -73,6 +87,12 @@ exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE2 }, {patch: true});
 
 Just like in Model creation, even if you are not updating all Model attributes, a complete representation is sent to the server.
 
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+exampleModel.save({ "ATTRIBUTENAME": TYPEVALUE2 }, {async: false});
+```
+
 Refer to [Backbone's Model save method](http://backbonejs.org/#Model-save) documentation for more information.
 
 ####Read
@@ -85,6 +105,20 @@ var singleInstance = new SDKNAMESdk.models.MODELNAME({
 });
 
 singleInstance.fetch({
+  success: function(model, response, options) {
+    // after the model has been fetched from the server...
+  },
+  error: function(model, response, options) {
+    // handle fetch error...
+  }
+});
+```
+
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+singleInstance.fetch({
+  async: false,
   success: function(model, response, options) {
     // after the model has been fetched from the server...
   },
@@ -116,6 +150,24 @@ exampleModel.destroy({
 
 The `success` and `error` callback are optional as with other Backbone CRUD method calls.
 
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+// using delete
+exampleModel.delete({
+  async: false,
+  success: function(model, response, options) {...},
+  error: function(model, response, options) {...}
+});
+
+// using destroy
+exampleModel.destroy({
+  async: false,
+  success: function(model, response, options) {...},
+  error: function(model, response, options) {...}
+});
+```
+
 Refer to [Backbone's Model destroy method](http://backbonejs.org/#Model-destroy) documentation for more information.
 
 ####Query Scopes
@@ -138,8 +190,10 @@ var MODELNAMEAll = new SDKNAMESdk.collections.MODELNAMEAll();
 MODELNAMEAll.query({
   FIELDNAME: FIELDVALUE
 }, {
-  limit: 10,
-  offset: 0,
+  data: {
+    limit: 10,
+    offset: 0
+  },
   success: function(collection, response, options) {...},
   error: function(collection, response, options) {...}
 });
@@ -149,14 +203,32 @@ MODELNAMEAll.fetch({
   query: {
     FIELDNAME: FIELDVALUE // here the query is passed as an attribute on the single options hash
   },
-  limit: 10,
-  offset: 0,
+  data: {
+    limit: 10,
+    offset: 0
+  },
   success: function(collection, response, options) {...},
   error: function(collection, response, options) {...}
 });
 ```
 
 The first object passed represents the field values to match when executing the query. The second object is an options hash, where you can define `success` and `error` callbacks but also a `limit` and `offset` value if you want the query results to be paginated.
+
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+MODELNAMEAll.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  async: false,
+  data: {
+    limit: 10,
+    offset: 0
+  },
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+```
 
 Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
 
@@ -171,8 +243,10 @@ var MODELNAMEExactMatch = new SDKNAMESdk.collections.MODELNAMEExactMatch();
 MODELNAMEExactMatch.query({
   FIELDNAME: FIELDVALUE
 }, {
-  limit: 10,
-  offset: 0,
+  data: {
+    limit: 10,
+    offset: 0
+  },
   success: function(collection, response, options) {...},
   error: function(collection, response, options) {...}
 });
@@ -182,8 +256,26 @@ MODELNAMEExactMatch.fetch({
   query: {
     FIELDNAME: FIELDVALUE // here the query is passed as an attribute on the single options hash
   },
-  limit: 10,
-  offset: 0,
+  data: {
+    limit: 10,
+    offset: 0
+  },
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+```
+
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+MODELNAMEExactMatch.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  async: false,
+  data: {
+    limit: 10,
+    offset: 0
+  },
   success: function(collection, response, options) {...},
   error: function(collection, response, options) {...}
 });
@@ -219,6 +311,20 @@ MODELNAMECount.fetch({
 var amount = MODELNAMECount.valueOf();
 ```
 
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+MODELNAMECount.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  async: false,
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
+var amount = MODELNAMECount.valueOf();
+```
+
 Refer to [Backbone's Collection fetch method](http://backbonejs.org/#Collection-fetch) documentation for more information.
 
 #####MODELNAMECountExactMatch
@@ -246,6 +352,20 @@ MODELNAMECountExactMatch.fetch({
 });
 
 // to access the amount
+var amount = MODELNAMECountExactMatch.valueOf();
+```
+
+This action is asynchronous by default, if you would like to execute it synchronously you can do:
+
+```javascript
+MODELNAMECountExactMatch.query({
+  FIELDNAME: FIELDVALUE
+}, {
+  async: false,
+  success: function(collection, response, options) {...},
+  error: function(collection, response, options) {...}
+});
+
 var amount = MODELNAMECountExactMatch.valueOf();
 ```
 
