@@ -30,8 +30,6 @@
 		- [Running Tests](#running-tests)
 <!-- /TOC -->
 
-## Project Structure
-
 ##Project Structure
 
 General description of the files and folders you will find within this SDK project folder.
@@ -134,26 +132,26 @@ $person.delete({ id: "1" }).success(function() {
 
 ####Query Scopes
 
-The available query scopes for Person objects are:
+The available query scopes for Person are:
 
-* PersonAll
-* PersonExactMatch
-* PersonCount
-* PersonCountExactMatch
-* PersonAllCash
+* all
+* exact_match
+* count
+* count_exact_match
+* all_cash
 
-#####All
+#####all
 
 To fetch the values of a query scope you can just call the query scope from the model. Object scopes like this one return an empty Array that will get filled when the data comes back from the backend server.
 
 ```javascript
-$scope.myScope = $person.All();
+$scope.myScope = $person.all();
 ```
 
 If the scope supports parameters to filter the results, then you can call them like so:
 
 ```javascript
-$scope.myScope = $person.All({
+$scope.myScope = $person.all({
 	query: { // In query go the parameters for the scope
 		name: "John",
 		age: 40
@@ -164,18 +162,18 @@ $scope.myScope = $person.All({
 });
 ```
 
-#####ExactMatch
+#####exact_match
 
 To fetch the values of a query scope you can just call the query scope from the model. Object scopes like this one return an empty Array that will get filled when the data comes back from the backend server.
 
 ```javascript
-$scope.myScope = $person.ExactMatch();
+$scope.myScope = $person.exact_match();
 ```
 
 If the scope supports parameters to filter the results, then you can call them like so:
 
 ```javascript
-$scope.myScope = $person.ExactMatch({
+$scope.myScope = $person.exact_match({
 	query: { // In query go the parameters for the scope
 		name: "John",
 		age: 40
@@ -186,31 +184,31 @@ $scope.myScope = $person.ExactMatch({
 });
 ```
 
-#####Count
+#####count
 
 To fetch the values of a query scope you can just call the query scope from the model. Aggregate scopes like this one return an Object with a single attribute.
 This attribute is always called `value` and it gets filled with the result of the query once the request comes back from the backend server.
 
 ```javascript
-$scope.myScope = $person.Count();
+$scope.myScope = $person.count();
 console.log($scope.myScope.value); // Would print a value like "3000" or undefined if the request hasn't returned yet
 ```
-#####CountExactMatch
+#####count_exact_match
 
 To fetch the values of a query scope you can just call the query scope from the model. Aggregate scopes like this one return an Object with a single attribute.
 This attribute is always called `value` and it gets filled with the result of the query once the request comes back from the backend server.
 
 ```javascript
-$scope.myScope = $person.CountExactMatch();
+$scope.myScope = $person.count_exact_match();
 console.log($scope.myScope.value); // Would print a value like "3000" or undefined if the request hasn't returned yet
 ```
-#####AllCash
+#####all_cash
 
 To fetch the values of a query scope you can just call the query scope from the model. Aggregate scopes like this one return an Object with a single attribute.
 This attribute is always called `value` and it gets filled with the result of the query once the request comes back from the backend server.
 
 ```javascript
-$scope.myScope = $person.AllCash();
+$scope.myScope = $person.all_cash();
 console.log($scope.myScope.value); // Would print a value like "3000" or undefined if the request hasn't returned yet
 ```
 
