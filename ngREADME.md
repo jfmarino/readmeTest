@@ -235,10 +235,10 @@ To access relationships within a Model there is an object within __all__ Models 
 
 ##### Belongs To
 
-###### 
+###### Person
 
 ```javascript
-$cat.person(function(result) {
+$cat.$related.person(function(result) {
 	// result will be an Array with the related models
 	console.log("Success!!");
 }, function() {
@@ -370,10 +370,10 @@ To access relationships within a Model there is an object within __all__ Models 
 
 ##### Belongs To
 
-###### 
+###### Person
 
 ```javascript
-$dog.person(function(result) {
+$dog.$related.person(function(result) {
 	// result will be an Array with the related models
 	console.log("Success!!");
 }, function() {
@@ -506,10 +506,10 @@ To access relationships within a Model there is an object within __all__ Models 
 
 ##### Has One
 
-###### 
+###### Cat
 
 ```javascript
-$person.cat(function(result) {
+$person.$related.cat(function(result) {
 	// result will be an Array with the related models
 	console.log("Success!!");
 }, function() {
@@ -519,10 +519,10 @@ $person.cat(function(result) {
 
 ##### Has Many
 
-###### 
+###### Dog
 
 ```javascript
-$person.dogs(function(result) {
+$person.$related.dogs(function(result) {
 	// result will be an Array with the related models
 	console.log("Success!!");
 }, function() {
