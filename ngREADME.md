@@ -99,9 +99,25 @@ That will give you access to your Model services from Controllers, Factories, Se
 
 ```javascript
 angular.module("myApp")
-	.factory("MyController", ["$relationshipsSdkConfig", function($relationshipsSdkConfig) {
+	.controller("MyController", ["$relationshipsSdkConfig", function($relationshipsSdkConfig) {
 
 		$relationshipsSdkConfig.baseUrl.set("https://www.foo.com");
+
+	}]);
+```
+
+##Using local caching
+
+To enable local caching for your SDK you just need to enable it. Bare in mind that local caching only caches GET requests.
+
+```javascript
+angular.module("myApp")
+	.controller("MyController", ["$relationshipsSdkConfig", function($relationshipsSdkConfig) {
+
+		// Enable local caching
+		$relationshipsSdkConfig.offlineCache.enable();
+		// You can also disable it at any time
+		$relationshipsSdkConfig.offlineCache.disable();
 
 	}]);
 ```
@@ -128,7 +144,7 @@ var instance = $cat.create({ name: "John" });
 instance.lastName = "Doe";
 instance.age = 28;
 // To save the instance do
-instance.$save().success(function() {
+instance.$save().then(function() {
 	// The instance got saved
 });
 ```
@@ -142,8 +158,10 @@ To update an instance you can call `instance.$save()` at any time.
 To read a specific instance by id you can do:
 
 ```javascript
-$cat.get({ id: "1" }).success(function(instance) {
+$cat.get({ id: "1" }).then(function(response) {
 	// The instance with id = "1" got fetched
+	// instance data is in response.data
+	console.log(response.data);
 });
 ```
 
@@ -152,7 +170,7 @@ $cat.get({ id: "1" }).success(function(instance) {
 To delete an instance:
 
 ```javascript
-$cat.delete({ id: "1" }).success(function() {
+$cat.delete({ id: "1" }).then(function() {
 	// The instance with id = "1" got deleted from the server
 });
 ```
@@ -184,7 +202,11 @@ $scope.myScope = $cat.all({
 	},
 	// Pagination options
 	limit: 15, // Max amount of results
-	offset: 0	// The index from which to start reading the amount of elements
+	offset: 0,	// The index from which to start reading the amount of elements
+}, function(collection) { // Success callback
+	// Use the collection data returned
+}, function(err) { // Error callback
+	// There was an error while fetching the data
 });
 ```
 
@@ -206,7 +228,11 @@ $scope.myScope = $cat.exact_match({
 	},
 	// Pagination options
 	limit: 15, // Max amount of results
-	offset: 0	// The index from which to start reading the amount of elements
+	offset: 0,	// The index from which to start reading the amount of elements
+}, function(collection) { // Success callback
+	// Use the collection data returned
+}, function(err) { // Error callback
+	// There was an error while fetching the data
 });
 ```
 
@@ -263,7 +289,7 @@ var instance = $dog.create({ name: "John" });
 instance.lastName = "Doe";
 instance.age = 28;
 // To save the instance do
-instance.$save().success(function() {
+instance.$save().then(function() {
 	// The instance got saved
 });
 ```
@@ -277,8 +303,10 @@ To update an instance you can call `instance.$save()` at any time.
 To read a specific instance by id you can do:
 
 ```javascript
-$dog.get({ id: "1" }).success(function(instance) {
+$dog.get({ id: "1" }).then(function(response) {
 	// The instance with id = "1" got fetched
+	// instance data is in response.data
+	console.log(response.data);
 });
 ```
 
@@ -287,7 +315,7 @@ $dog.get({ id: "1" }).success(function(instance) {
 To delete an instance:
 
 ```javascript
-$dog.delete({ id: "1" }).success(function() {
+$dog.delete({ id: "1" }).then(function() {
 	// The instance with id = "1" got deleted from the server
 });
 ```
@@ -319,7 +347,11 @@ $scope.myScope = $dog.all({
 	},
 	// Pagination options
 	limit: 15, // Max amount of results
-	offset: 0	// The index from which to start reading the amount of elements
+	offset: 0,	// The index from which to start reading the amount of elements
+}, function(collection) { // Success callback
+	// Use the collection data returned
+}, function(err) { // Error callback
+	// There was an error while fetching the data
 });
 ```
 
@@ -341,7 +373,11 @@ $scope.myScope = $dog.exact_match({
 	},
 	// Pagination options
 	limit: 15, // Max amount of results
-	offset: 0	// The index from which to start reading the amount of elements
+	offset: 0,	// The index from which to start reading the amount of elements
+}, function(collection) { // Success callback
+	// Use the collection data returned
+}, function(err) { // Error callback
+	// There was an error while fetching the data
 });
 ```
 
@@ -398,7 +434,7 @@ var instance = $person.create({ name: "John" });
 instance.lastName = "Doe";
 instance.age = 28;
 // To save the instance do
-instance.$save().success(function() {
+instance.$save().then(function() {
 	// The instance got saved
 });
 ```
@@ -412,8 +448,10 @@ To update an instance you can call `instance.$save()` at any time.
 To read a specific instance by id you can do:
 
 ```javascript
-$person.get({ id: "1" }).success(function(instance) {
+$person.get({ id: "1" }).then(function(response) {
 	// The instance with id = "1" got fetched
+	// instance data is in response.data
+	console.log(response.data);
 });
 ```
 
@@ -422,7 +460,7 @@ $person.get({ id: "1" }).success(function(instance) {
 To delete an instance:
 
 ```javascript
-$person.delete({ id: "1" }).success(function() {
+$person.delete({ id: "1" }).then(function() {
 	// The instance with id = "1" got deleted from the server
 });
 ```
@@ -454,7 +492,11 @@ $scope.myScope = $person.all({
 	},
 	// Pagination options
 	limit: 15, // Max amount of results
-	offset: 0	// The index from which to start reading the amount of elements
+	offset: 0,	// The index from which to start reading the amount of elements
+}, function(collection) { // Success callback
+	// Use the collection data returned
+}, function(err) { // Error callback
+	// There was an error while fetching the data
 });
 ```
 
@@ -476,7 +518,11 @@ $scope.myScope = $person.exact_match({
 	},
 	// Pagination options
 	limit: 15, // Max amount of results
-	offset: 0	// The index from which to start reading the amount of elements
+	offset: 0,	// The index from which to start reading the amount of elements
+}, function(collection) { // Success callback
+	// Use the collection data returned
+}, function(err) { // Error callback
+	// There was an error while fetching the data
 });
 ```
 
