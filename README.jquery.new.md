@@ -15,15 +15,15 @@ This should serve as a guide for the JQuery SDK for `Relationships`
 - [Authentication](#authentication)
 - [Models](#models)
 		
-		- [Cat](#cat)
-			- [Create](#create-cat)
+      - [Cat](#cat)
+		- [Create](#create-cat)
       - [Read](#read-cat)
-			- [Update](#update-cat)
-			- [Delete](#delete-cat)
+		- [Update](#update-cat)
+		- [Delete](#delete-cat)
       - [Direct to Source](#direct-to-source-cat)
-			- [Query Scopes](#query-scopes-cat)
+		- [Query Scopes](#query-scopes-cat)
 			
-			- [Relationships](#relationships-cat)
+		- [Relationships](#relationships-cat)
 			
 		
 		- [Dog](#dog)
