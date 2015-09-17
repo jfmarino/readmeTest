@@ -14,8 +14,8 @@ This should serve as a guide for the JQuery SDK for `Relationships`
 - [Local Caching](#local-caching)
 - [Authentication](#authentication)
 - [Models](#models)
-		
-      	- [Cat](#cat)
+	
+	- [Cat](#cat)
 		- [Create](#create-cat)
       		- [Read](#read-cat)
 		- [Update](#update-cat)
