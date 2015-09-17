@@ -1,5 +1,4 @@
-# ***[Application Name]***Sdk
-`Relationships`Sdk
+# RelationshipsSdk
 
 ## Description
 
@@ -50,7 +49,14 @@ This should serve as a guide for the Angular SDK for `Relationships`
       
 	
 - [Development](#development)
-    - [Placeholder for sub-sections]
+    - [Developing with Grunt](#developing-with-grunt)
+      - [Prerequisites](#prerequisites)
+      - [Install NodeJS Modules](#install-nodejs-modules)
+      - [Adding code to the SDK](#adding-code-to-the-sdk)
+      - [Build for Production](#build-for-production)
+      - [Development](#development)
+      - [Automatic Compilation & Testing](#automatic-compilation-testing)
+      - [Running Tests](#running-tests)
 - [Testing](#testing)
 
 ## <a name="project-structure"></a> Project Structure
