@@ -17,32 +17,30 @@ This should serve as a guide for the JQuery SDK for `Relationships`
 	
 	- [Cat](#cat)
 		- [Create](#create-cat)
-      		- [Read](#read-cat)
+		- [Read](#read-cat)
 		- [Update](#update-cat)
 		- [Delete](#delete-cat)
-      		- [Direct to Source](#direct-to-source-cat)
+		- [Direct to Source](#direct-to-source-cat)
 		- [Query Scopes](#query-scopes-cat)
-			
 		- [Relationships](#relationships-cat)
 			
 		
 	- [Dog](#dog)
 		- [Create](#create-dog)
-      		- [Read](#read-dog)
+		- [Read](#read-dog)
 		- [Update](#update-dog)
 		- [Delete](#delete-dog)
-      		- [Direct to Source](#direct-to-source-dog)
+		- [Direct to Source](#direct-to-source-dog)
 		- [Query Scopes](#query-scopes-dog)
-			
 		- [Relationships](#relationships-dog)
 			
 		
 	- [Person](#person)
 		- [Create](#create-person)
-      		- [Read](#read-person)
+		- [Read](#read-person)
 		- [Update](#update-person)
 		- [Delete](#delete-person)
-      		- [Direct to Source](#direct-to-source-person)
+		- [Direct to Source](#direct-to-source-person)
 		- [Query Scopes](#query-scopes-person)
 		- [Relationships](#relationships-person)
 			
